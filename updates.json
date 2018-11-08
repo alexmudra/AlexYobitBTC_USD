@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 766434827,
+      "message": {
+        "message_id": 2,
+        "from": {
+          "id": 284158456,
+          "is_bot": false,
+          "first_name": "Alex",
+          "last_name": "Kobko",
+          "language_code": "en-US"
+        },
+        "chat": {
+          "id": 284158456,
+          "first_name": "Alex",
+          "last_name": "Kobko",
+          "type": "private"
+        },
+        "date": 1541337421,
+        "text": "/start",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 6,
+            "type": "bot_command"
+          }
+        ]
+      }
+    },
+    {
+      "update_id": 766434828,
+      "message": {
+        "message_id": 7,
+        "from": {
+          "id": 284158456,
+          "is_bot": false,
+          "first_name": "Alex",
+          "last_name": "Kobko",
+          "language_code": "en-US"
+        },
+        "chat": {
+          "id": 284158456,
+          "first_name": "Alex",
+          "last_name": "Kobko",
+          "type": "private"
+        },
+        "date": 1541354361,
+        "text": "привіт"
+      }
+    }
+  ]
+}
