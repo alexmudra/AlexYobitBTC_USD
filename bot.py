@@ -11,6 +11,7 @@ token = misc.token
 
 # створили url
 URL = 'https://api.telegram.org/bot' + token + '/'
+#f'https://api.telegram.org/bot{token}/'
 #745109047:AAEu0bVlQSOanftv1yibr4MrRQhdDlzPx08/sendmessage?chat_id=284158456&text=HI%20again
 
 #ф-ія працює з апдейтами
