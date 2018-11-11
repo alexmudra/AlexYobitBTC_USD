@@ -64,7 +64,7 @@ def main():
     # print(answer)
     chat_id = answer['chat_id']
     # print(chat_id)
-    send_message(chat_id, "Що ви бажаєте? ")
+    send_message(chat_id, "Що бажаєте? ")
 
 
 
