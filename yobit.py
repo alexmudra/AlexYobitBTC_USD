@@ -4,10 +4,11 @@ import requests
 
 def get_btc():
     url = "https://yobit.net/api/2/btc_usd/ticker"
-    response_yobit = requests.get(url).json() #ми отримали дікшінарі з відповіддю із сайту курсу валют yobit
+    response = requests.get(url).json() #ми отримали дікшінарі з відповіддю із сайту курсу валют yobit
     #print(response_yobit)
-    price = response_yobit['ticker']['last'] #вивели з дікшінарі значення останнього курсу валюти (виведе щось подібне до 6634)
+    price = response['ticker']['last'] #вивели з дікшінарі значення останнього курсу валюти (виведе щось подібне до 6634)
+    #print(str(price))
+    return str(price) + ' usd'
 
-    return str(price) + 'usd'
 
-get_btc() #визвали функцію
+#print(get_btc()) #визвали функцію

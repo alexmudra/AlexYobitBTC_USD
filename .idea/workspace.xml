@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c070187-692b-4217-8d12-09ee0d8868a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yobit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yobit.py" beforeDir="false" afterPath="$PROJECT_DIR$/yobit.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +39,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="info" value="9" />
-          <entry key="py" value="2492" />
+          <entry key="py" value="2856" />
+          <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2492" />
+          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="Python" value="2856" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
@@ -61,27 +63,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="307">
+              <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1541970707565" expanded="true" signature="1491:1603" ph="..." />
-                <marker date="1541970707565" expanded="true" signature="1614:1615" ph="..." />
-                <marker date="1541970707565" expanded="true" signature="1929:2201" ph="..." />
-                <marker date="1541970707565" expanded="true" signature="2185:2188" ph="..." />
+                <marker date="1542058889958" expanded="true" signature="1556:1668" ph="..." />
+                <marker date="1542058889958" expanded="true" signature="1679:1680" ph="..." />
+                <marker date="1542058889958" expanded="true" signature="1994:2552" ph="..." />
+                <marker date="1542058889958" expanded="true" signature="2536:2539" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yobit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="195">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -113,8 +115,8 @@
         <option value="$PROJECT_DIR$/info" />
         <option value="$PROJECT_DIR$/credentials" />
         <option value="$PROJECT_DIR$/misc.py" />
-        <option value="$PROJECT_DIR$/bot.py" />
         <option value="$PROJECT_DIR$/yobit.py" />
+        <option value="$PROJECT_DIR$/bot.py" />
       </list>
     </option>
   </component>
@@ -160,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.yobit">
+  <component name="RunManager" selected="Python.bot">
     <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AlexYobitCurrencyTelegramBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,8 +211,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.yobit" />
         <item itemvalue="Python.bot" />
+        <item itemvalue="Python.yobit" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +227,31 @@
       <option name="presentableId" value="Default" />
       <updated>1541336186074</updated>
     </task>
+    <task id="LOCAL-00001" summary="finished bot file and started yobit function">
+      <created>1541971493102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541971493102</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finished bot file and started yobit function">
+      <created>1541971573794</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541971573794</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
@@ -234,7 +260,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.40603247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32916668" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" weight="0.32916668" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32963988" />
@@ -244,7 +270,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -254,6 +280,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished bot file and started yobit function" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished bot file and started yobit function" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/info">
@@ -287,20 +317,6 @@
     <entry file="file://$PROJECT_DIR$/output_colors.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1541970707565" expanded="true" signature="1491:1603" ph="..." />
-            <marker date="1541970707565" expanded="true" signature="1614:1615" ph="..." />
-            <marker date="1541970707565" expanded="true" signature="1929:2201" ph="..." />
-            <marker date="1541970707565" expanded="true" signature="2185:2188" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/updates.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
@@ -310,8 +326,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yobit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1542058889958" expanded="true" signature="1556:1668" ph="..." />
+            <marker date="1542058889958" expanded="true" signature="1679:1680" ph="..." />
+            <marker date="1542058889958" expanded="true" signature="1994:2552" ph="..." />
+            <marker date="1542058889958" expanded="true" signature="2536:2539" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

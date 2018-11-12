@@ -3,6 +3,8 @@ import misc
 import pprint
 import json
 
+from yobit import get_btc
+
 
 token = misc.token
 
@@ -33,8 +35,8 @@ def get_message():
     chat_id = data['result'][-1]['message']['chat']['id'] #знайшли в словниках і лістах chat_id
     message_text = data['result'][-1]['message']['text']
     message = {'chat_id': chat_id,
-               'message_text':message_text}
-    print("Out chat id is: ", message)
+               'text':message_text}
+    print("Out chat id is: ", message_text)
 
     return message
 
@@ -61,10 +63,21 @@ def main():
 #send_message(14) #для експерименту визиваємо цю функцію
 
     answer = get_message()
-    # print(answer)
+    #print(answer)
     chat_id = answer['chat_id']
-    # print(chat_id)
-    send_message(chat_id, "Що бажаєте? ")
+    #print(chat_id)
+    #send_message(chat_id, "Що бажаєте? ")
+    text = answer['text']
+    #print("Out variable text is:", text)
+
+    #перевірим як працює умова зі словом kasha
+    # if 'kasha' in text:
+    #     send_message(chat_id, 'What?')
+
+    #пропишем умову для ф-ії get_btc
+
+    if text  == '/btc':
+        send_message(chat_id, get_btc())
 
 
 
