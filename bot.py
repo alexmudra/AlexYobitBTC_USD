@@ -4,6 +4,7 @@ import pprint
 import json
 
 from yobit import get_btc
+from time import sleep
 
 
 token = misc.token
@@ -13,6 +14,11 @@ token = misc.token
 
 # створили url
 URL = 'https://api.telegram.org/bot' + token + '/'
+
+global last_update_id #створили глобальну перемінну (хоча в такому випадку краще використовувати клас)
+last_update_id = 0
+
+
 #f'https://api.telegram.org/bot{token}/'
 #745109047:AAEu0bVlQSOanftv1yibr4MrRQhdDlzPx08/sendmessage?chat_id=284158456&text=HI%20again
 
@@ -30,15 +36,31 @@ def get_updates():
 
 #ф-ія для отримання повідомлень із сервера
 def get_message():
+    #відповідати тільки на останні повідомлення
+    # напишемо код щоб відповідати тільки на нові повідомлення  = отримувати update_id кожного обновлення з сайту yobit
+    # записувати його в перемінну
+    # порівнювати його з останнім оновленням
+
     data = get_updates()
+    last_object = data['result'][-1]
+    current_update_id = last_object["update_id"] #витягуєм з updates.json(дікшінарі) останній update_id
 
-    chat_id = data['result'][-1]['message']['chat']['id'] #знайшли в словниках і лістах chat_id
-    message_text = data['result'][-1]['message']['text']
-    message = {'chat_id': chat_id,
+    global last_update_id #показали що ми працюємо з раніше об'явленою глобальною перемінною
+
+    #умова для перевірки update_id до нового(з новими даними) існуючого останнього елементу списку result
+    if last_update_id != current_update_id:
+        last_update_id = current_update_id
+
+
+        chat_id = last_object['message']['chat']['id'] #знайшли в словниках і лістах chat_id
+        message_text = last_object['message']['text']
+        message = {'chat_id': chat_id,
                'text':message_text}
-    print("Out chat id is: ", message_text)
+        #print("Out chat id is: ", message_text)
 
-    return message
+        return message
+
+    return None
 
 
 #Робимо ф-ію відправки повідомлення
@@ -62,22 +84,30 @@ def main():
 #get_message() #для експерименту визиваємо цю ф-ію
 #send_message(14) #для експерименту визиваємо цю функцію
 
+"""
+створимо цикл while щоб постійно не запускати ф-ію send_message
+"""
+while True:
     answer = get_message()
-    #print(answer)
-    chat_id = answer['chat_id']
-    #print(chat_id)
-    #send_message(chat_id, "Що бажаєте? ")
-    text = answer['text']
-    #print("Out variable text is:", text)
+
+    if answer != None:
+        chat_id = answer['chat_id']
+        #send_message(chat_id, "Що бажаєте? ")
+        text = answer['text']
+        #print("Out variable text is:", text)
 
     #перевірим як працює умова зі словом kasha
-    # if 'kasha' in text:
+    # if 'exellent' in text:
     #     send_message(chat_id, 'What?')
 
     #пропишем умову для ф-ії get_btc
 
-    if text  == '/btc':
-        send_message(chat_id, get_btc())
+        if text  == '/btc':
+            send_message(chat_id, get_btc())
+    else:
+        continue
+
+    sleep(3) #спамить кожні 3 секунди сайт телеграма
 
 
 
