@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c070187-692b-4217-8d12-09ee0d8868a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-    </list>
+    <list default="true" id="0c070187-692b-4217-8d12-09ee0d8868a5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +12,7 @@
     <session id="321568702">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -38,14 +36,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="info" value="9" />
-          <entry key="py" value="3748" />
-          <entry key="txt" value="120" />
+          <entry key="py" value="3796" />
+          <entry key="txt" value="145" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="120" />
-          <entry key="Python" value="3748" />
+          <entry key="PLAIN_TEXT" value="145" />
+          <entry key="Python" value="3796" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
@@ -65,14 +63,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+            <state relative-caret-position="455">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1542145174513" expanded="true" signature="2406:2518" ph="..." />
-                <marker date="1542145174513" expanded="true" signature="2529:2530" ph="..." />
-                <marker date="1542145174513" expanded="true" signature="2844:3536" ph="..." />
-                <marker date="1542145174513" expanded="true" signature="3521:3523" ph="..." />
+                <marker date="1542145561421" expanded="true" signature="2406:2518" ph="..." />
+                <marker date="1542145561421" expanded="true" signature="2529:2530" ph="..." />
+                <marker date="1542145561421" expanded="true" signature="2844:3576" ph="..." />
+                <marker date="1542145561421" expanded="true" signature="3561:3563" ph="..." />
               </folding>
             </state>
           </provider>
@@ -247,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542059170994</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finished telegram bot">
+      <created>1542145596427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542145596427</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -261,7 +266,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.40603247" />
@@ -272,7 +276,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32963988" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33055556" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33055556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -290,7 +294,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished bot file and started yobit function" />
     <MESSAGE value="added get_btc function in bot, return btc currency in usd" />
-    <option name="LAST_COMMIT_MESSAGE" value="added get_btc function in bot, return btc currency in usd" />
+    <MESSAGE value="finished telegram bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished telegram bot" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/info">
@@ -340,14 +345,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+        <state relative-caret-position="455">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1542145174513" expanded="true" signature="2406:2518" ph="..." />
-            <marker date="1542145174513" expanded="true" signature="2529:2530" ph="..." />
-            <marker date="1542145174513" expanded="true" signature="2844:3536" ph="..." />
-            <marker date="1542145174513" expanded="true" signature="3521:3523" ph="..." />
+            <marker date="1542145561421" expanded="true" signature="2406:2518" ph="..." />
+            <marker date="1542145561421" expanded="true" signature="2529:2530" ph="..." />
+            <marker date="1542145561421" expanded="true" signature="2844:3576" ph="..." />
+            <marker date="1542145561421" expanded="true" signature="3561:3563" ph="..." />
           </folding>
         </state>
       </provider>
